@@ -39,7 +39,7 @@ function do1round()
     echo ">>> max_length: "${2}
     echo ">>> gpu: "${3}
 
-    CUDA_VISIBLE_DEVICES=${3} python capsule_network.py \
+    CUDA_VISIBLE_DEVICES=${3} python DeepB3P3.py \
     --train_path $train_path \
     --test_path $test_path \
     --result_path $result_path \
