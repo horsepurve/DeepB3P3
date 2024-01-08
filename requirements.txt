@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+torch
+torchnet
+tnt # pip install git+https://github.com/pytorch/tnt.git@master
+tqdm
+visdom
