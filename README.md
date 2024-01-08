@@ -2,6 +2,7 @@
 <p align="center">
   <img src="./fig/flowchart.png">
 </p>
+
 ### Installation
 See requirements.txt.
 
@@ -9,7 +10,7 @@ See requirements.txt.
 
 ### Training
 ```bash
-    python DeepB3P3.py \
+python DeepB3P3.py \
     --train_path $train_path \
     --test_path $test_path \
     --result_path $result_path \
@@ -27,3 +28,4 @@ bash run.sh
 ### Analysis
 
 ### Reference
+
