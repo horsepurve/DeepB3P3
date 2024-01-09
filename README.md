@@ -4,9 +4,13 @@
 </p>
 
 ### Installation
-See requirements.txt.
+Please see requirements.txt.
 
 ### Datasets
+| Source | Total number | BBBPs | non-BBBPs  |
+| ------ | ------------ | ----- | ---------- |
+| B3Pred Training set   | 2367  | 215 | 2152 |
+| B3Pred Testing set    | 592   | 54  | 538  |
 
 ### Masking peptides for small data challenge
 The size of drug discovery datasets can be extremely limited due to the high cost of the experiments ([1](https://pubs.acs.org/doi/10.1021/acscentsci.6b00367),[2](https://pubs.acs.org/doi/10.1021/acs.chemrev.3c00189)). However, the training of modern neural networks typically requires large-scale high-quality data. In this paper, we introduce 'masked peptide' that can significantly overcome this issue (Fig. (A)).
