@@ -22,6 +22,7 @@ Unlike other data augmentation methods, our masking peptide technique does not i
 
 ### Training
 ```bash
+mkdir temp
 python DeepB3P3.py \
     --train_path 'bbbp/d3_train_a1x8.txt' \
     --test_path 'bbbp/d3_test_a1x8.txt' \
@@ -32,12 +33,25 @@ python DeepB3P3.py \
     --conv2_kernel 10 \
     --regCLASS --LR 0.001 --EVALUATE_ALL --NUM_EPOCHS 50
 ```
-Or experiment with multiple magnitudes of data augmentation:
+Or experiment with multiple magnitudes of data augmentation using a single script.
 ```bash 
 mkdir collect
 bash run.sh
 ```
 ### Analysis
-
+Pretrained model files: [Google Drive](https://drive.google.com/file/d/1OiLLq8UKR1_d833OXIEFZoIIzItwMcpv/view?usp=sharing).
+Please download the file (163MB) and unzip to 'DeepB3P3/collect/8/max75'. Then follow the jupyter notebook 'DeepB3P3_Analysis.ipynb'.
 ### Reference
-
+```
+@article{ma2023prediction,
+  title={A prediction model for blood-brain barrier penetrating peptides based on masked peptide transformers with dynamic routing},
+  author={Ma, Chunwei and Wolfinger, Russ},
+  journal={Briefings in Bioinformatics},
+  volume={24},
+  number={6},
+  pages={bbad399},
+  year={2023},
+  publisher={Oxford University Press}
+}
+```
+Please let [me](horsepurve@gmail.com) know if you have any questions about this research.
