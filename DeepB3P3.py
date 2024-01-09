@@ -239,6 +239,7 @@ class CapsuleNet(nn.Module):
         # print('>>dim: y', y) # [batch, 10] ~ [batch, NUM_CLASSES]
         if True == CNN_EMB:
             x = self.emb(x) # [batch, len] -> [batch, len, dict]
+            # x = self.encoder_layer(x)
             x = x.transpose(dim0=1, dim1=2) # -> [batch, dict, len]
             x = x[:,None,:,:] # -> [batch, 1, dict, len]
 
