@@ -54,4 +54,4 @@ Please download the file (163MB) and unzip to 'DeepB3P3/collect/8/max75'. Then f
   publisher={Oxford University Press}
 }
 ```
-Please let [me](horsepurve@gmail.com) know if you have any questions about this research.
+Please let [me](mailto:horsepurve@gmail.com) know if you have any questions about this research.
