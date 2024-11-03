@@ -22,7 +22,7 @@ BATCH_SIZE = 16 # 16
 NUM_CLASSES = 10
 NUM_EPOCHS = 50
 NUM_ROUTING_ITERATIONS = 1
-CUDA = True # False # 
+CUDA = torch.cuda.is_available() # True # False # 
 LR = 0.01
 
 SAVE_MODEL = False
