@@ -26,8 +26,8 @@ mkdir temp
 python DeepB3P3.py \
     --train_path 'bbbp/d3_train_a1x8.txt' \
     --test_path 'bbbp/d3_test_a1x8.txt' \
-    --result_path 'temp/d1_test.pred.txt' \
-    --log_path 'temp/d1_test.txt.log' \
+    --result_path 'temp/d3_test.pred.txt' \
+    --log_path 'temp/d3_test.txt.log' \
     --max_length 75 \
     --conv1_kernel 10 \
     --conv2_kernel 10 \
