@@ -431,7 +431,7 @@ def xx_aug(input_data, output_data, AA=2, times=4):
             df_write(df_, f)
             df = df_ # move to next level
 #%%
-import faiss 
+# import faiss 
 def hit(d_, hit_):
     '''
     d_   = D[0]
@@ -461,27 +461,6 @@ def influence(D, Ilabel, mode=0):
         result[np.isnan(result)] = 0
     return result
 
-def neighbor(fea_tr, fea_te, lab_tr, 
-             k=4, mode=0
-             ):
-    '''
-    k     = 4
-    mode  = 0
-    '''
-    print('> train dim:', fea_tr.shape)
-    print('> test dim:', fea_te.shape)
-    assert fea_tr.shape[0] == lab_tr.shape[0]
-    d  = 16
-    xb = fea_tr
-    xq = fea_te
-    index = faiss.IndexFlatL2(d)
-    index.add(xb)
-    D, I = index.search(xq, k)
-    Ilabel = lab_tr[I]
-    
-    scores = influence(D, Ilabel, mode=mode)
-    predic = np.argmax(scores, axis=-1)
-    return predic
 #%%
 def w_l(values, v_mean):
     '''
