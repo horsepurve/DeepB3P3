@@ -41,6 +41,10 @@ bash run.sh
 ### Analysis
 Pretrained model files: [Google Drive](https://drive.google.com/file/d/1OiLLq8UKR1_d833OXIEFZoIIzItwMcpv/view?usp=sharing).
 Please download the file (163MB) and unzip to 'DeepB3P3/collect/8/max75'. Then follow the jupyter notebook 'DeepB3P3_Analysis.ipynb'.
+
+### Prediction
+For prediction, you may run it online at [google colab](https://colab.research.google.com/drive/1Dwiwsgj8wGzZ9TGz4uH5yUeR6bVz_x4a?usp=sharing).
+
 ### Reference
 ```
 @article{ma2023prediction,
